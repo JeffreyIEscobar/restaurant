@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reservations - Le Gran Cheval</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Le Gran Cheval</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="booking.html">Reservations</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="booking">
+            <h2>Make a Reservation</h2>
+            <form action="submit-reservation.php" method="post">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="date">Date:</label><br>
+                <input type="date" id="date" name="date"><br>
+                <label for="time">Time:</label><br>
+                <input type="time" id="time" name="time"><br>
+                <label for="guests">Number of Guests:</label><br>
+                <input type="number" id="guests" name="guests" min="1" max="10"><br>
+                <input type="submit" value="Book Table">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Le Gran Cheval</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
